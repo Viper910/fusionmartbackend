@@ -1,0 +1,40 @@
+POST http://192.168.29.157:5000/api/users/signin HTTP/1.1
+Content-Type: application/json
+
+{
+    "email" : "abc@gmail.com",
+    "password" : "1234"
+}
+//good request 
+
+
+//bad request
+###
+
+POST http://192.168.29.157:5000/api/users/signin HTTP/1.1
+Content-Type: application/json
+
+{
+    "email" : "abc@gmail.com",
+    "password" : "12344"
+}
+
+
+###
+POST http://192.168.29.157:5000/api/users/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Alok1",
+    "email":"alok11@gmail.com",
+    "password":"1234445"
+}
+
+###
+GET http://192.168.29.157:5000/api/orders/orderhistory HTTP/1.1
+Content-Type: application/json
+
+{
+    "user": "6218f9b46532aafc2d51e1b2";
+}
+
